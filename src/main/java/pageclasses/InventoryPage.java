@@ -36,7 +36,6 @@ public class InventoryPage {
 	 * Extract all products map() filter() sorted()
 	 */
 	public Map<String, Double> getFilteredProducts() {
-//WaitUtils.visibilityOfAllElementsLocatedBy(inventoryItems);
 		//DriverManager.getDriver().findElements(inventoryItems)
 		List<WebElement> products = WaitUtils.visibilityOfAllElementsLocatedBy(inventoryItems);
 
