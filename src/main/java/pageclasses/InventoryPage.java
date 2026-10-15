@@ -17,6 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import managers.DriverManager;
 import utils.UIActionsUtils;
+import utils.WaitUtils;
 
 public class InventoryPage {
 
@@ -35,8 +36,9 @@ public class InventoryPage {
 	 * Extract all products map() filter() sorted()
 	 */
 	public Map<String, Double> getFilteredProducts() {
-
-		List<WebElement> products = DriverManager.getDriver().findElements(inventoryItems);
+//WaitUtils.visibilityOfAllElementsLocatedBy(inventoryItems);
+		//DriverManager.getDriver().findElements(inventoryItems)
+		List<WebElement> products = WaitUtils.visibilityOfAllElementsLocatedBy(inventoryItems);
 
 		Map<String, Double> filteredProducts = products.stream()
 

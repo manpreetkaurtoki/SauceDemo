@@ -15,4 +15,18 @@
       </class> <!-- saucedemotests.LoginTest -->
     </classes>
   </test> <!-- Safari Test(failed) -->
+  <test thread-count="2" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="saucedemotests.LoginTest">
+        <methods>
+          <include name="initialise"/>
+          <include name="preReq"/>
+          <include name="endTest"/>
+          <include name="tearDown"/>
+          <include name="loginSuccesTest"/>
+        </methods>
+      </class> <!-- saucedemotests.LoginTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Cross Browser Suite] -->
