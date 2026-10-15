@@ -4,7 +4,7 @@
        parallel="tests"
        thread-count="2">
 
-    <test name="Chrome Test">
+   <test name="Chrome Test">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="saucedemotests.LoginTest"/>

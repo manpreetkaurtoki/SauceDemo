@@ -51,14 +51,14 @@ public class LoginTest extends BaseTest {
 			
 		}
 		
-		//String twitterTitle = inventoryPage.verifyTwitterTab();
+		String twitterTitle = inventoryPage.verifyTwitterTab();
 
-		//System.out.println("Twitter Title: " + twitterTitle);
+		System.out.println("Twitter Title: " + twitterTitle);
 		
 
-		//String linkedTitle = inventoryPage.verifyLinkedinTab();
+		String linkedTitle = inventoryPage.verifyLinkedinTab();
 
-		//System.out.println("Linked Title: " + linkedTitle);
+		System.out.println("Linked Title: " + linkedTitle);
 		
 		
 
