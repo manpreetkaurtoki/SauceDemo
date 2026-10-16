@@ -5,6 +5,7 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageclasses.CheckoutPage;
 import pageclasses.InventoryPage;
 import pageclasses.LoginPage;
 
@@ -51,14 +52,21 @@ public class LoginTest extends BaseTest {
 			
 		}
 		
-		String twitterTitle = inventoryPage.verifyTwitterTab();
+		inventoryPage.clickCart();
+		
+		CheckoutPage checkoutPage = new CheckoutPage();
+		checkoutPage.scrollToBottom();
+		checkoutPage.clickCheckout();
+		checkoutPage.enterCustomerInformation("Manpreet", "K", "L6X 0L8");
+		checkoutPage.clickContinue();
+		//String twitterTitle = inventoryPage.verifyTwitterTab();
 
-		System.out.println("Twitter Title: " + twitterTitle);
+		//System.out.println("Twitter Title: " + twitterTitle);
 		
 
-		String linkedTitle = inventoryPage.verifyLinkedinTab();
+		//String linkedTitle = inventoryPage.verifyLinkedinTab();
 
-		System.out.println("Linked Title: " + linkedTitle);
+		//System.out.println("Linked Title: " + linkedTitle);
 		
 		
 

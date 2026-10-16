@@ -24,17 +24,15 @@ public class InventoryPage {
 	private By inventoryItems = By.cssSelector(".inventory_item");
 	private By itemName = By.cssSelector(".inventory_item_name");
 	private By itemPrice = By.cssSelector(".inventory_item_price");
-
+	private By cartBtn = By.cssSelector("a.shopping_cart_link");
 	private By twitter = By.cssSelector("a[data-test='social-x']");
 	private By linkedin = By.cssSelector("a[data-test='social-linkedin']");
-
+	
 	private final ConcurrentHashMap<String, Double> inventoryMap = new ConcurrentHashMap<>();
 
 	private final Deque<String> checkoutQueue = new ArrayDeque<>();
 
-	/*
-	 * Extract all products map() filter() sorted()
-	 */
+	
 	public Map<String, Double> getFilteredProducts() {
 		//DriverManager.getDriver().findElements(inventoryItems)
 		List<WebElement> products = WaitUtils.visibilityOfAllElementsLocatedBy(inventoryItems);
@@ -136,6 +134,15 @@ public class InventoryPage {
 	                productName + " added successfully."
 	        );
 	    }
+	}
+	
+	public void clickCart()
+	
+	{
+		System.out.println("Before cart");
+		UIActionsUtils.click(cartBtn,"Cart button");
+		WaitUtils.actions().click().perform();
+		System.out.println("After cart");
 	}
 
 	public String verifyTwitterTab() {
