@@ -52,6 +52,7 @@ public class LoginTest extends BaseTest {
 			
 		}
 		
+		
 		inventoryPage.clickCart();
 		
 		CheckoutPage checkoutPage = new CheckoutPage();

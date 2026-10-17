@@ -35,6 +35,8 @@ public class InventoryPage {
 	
 	public Map<String, Double> getFilteredProducts() {
 		//DriverManager.getDriver().findElements(inventoryItems)
+	
+		//UIActionsUtils.alertIsPresent();
 		List<WebElement> products = WaitUtils.visibilityOfAllElementsLocatedBy(inventoryItems);
 
 		Map<String, Double> filteredProducts = products.stream()
@@ -63,7 +65,6 @@ public class InventoryPage {
 						LinkedHashMap::new));
 
 		inventoryMap.putAll(filteredProducts);
-
 		return filteredProducts;
 	}
 

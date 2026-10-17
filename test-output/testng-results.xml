@@ -1,110 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-16T15:38:45 EDT" name="Cross Browser Suite" finished-at="2026-10-16T15:38:58 EDT" duration-ms="12959">
+  <suite started-at="2026-10-17T18:37:44 EDT" name="Default suite" finished-at="2026-10-17T18:38:02 EDT" duration-ms="18494">
     <groups>
     </groups>
-    <test started-at="2026-10-16T15:38:45 EDT" name="Chrome Test" finished-at="2026-10-16T15:38:55 EDT" duration-ms="10232">
+    <test started-at="2026-10-17T18:37:44 EDT" name="Default test" finished-at="2026-10-17T18:38:02 EDT" duration-ms="18494">
       <class name="saucedemotests.LoginTest">
-        <test-method is-config="true" signature="preReq(java.lang.reflect.Method,java.lang.String)[pri:0, instance:saucedemotests.LoginTest@4562e04d]" started-at="2026-10-16T15:38:45 EDT" name="preReq" finished-at="2026-10-16T15:38:50 EDT" duration-ms="4962" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void saucedemotests.LoginTest.loginSuccesTest()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preReq -->
-        <test-method signature="loginSuccesTest()[pri:0, instance:saucedemotests.LoginTest@4562e04d]" started-at="2026-10-16T15:38:50 EDT" name="loginSuccesTest" finished-at="2026-10-16T15:38:55 EDT" duration-ms="4798" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
-  (Session info: chrome=155.0.8059.82)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.9', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [faaea3bfbba59bcb8d82bac2b0084fe1, findElement {using=id, value=checkout}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.82, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: /var/folders/hp/xcf3qcdd4dl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57721}, goog:processID: 16710, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57721/devtoo..., se:cdpVersion: 155.0.8059.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: faaea3bfbba59bcb8d82bac2b0084fe1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#checkout"}
-  (Session info: chrome=155.0.8059.82)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.9', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [faaea3bfbba59bcb8d82bac2b0084fe1, findElement {using=id, value=checkout}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.82, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: /var/folders/hp/xcf3qcdd4dl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57721}, goog:processID: 16710, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57721/devtoo..., se:cdpVersion: 155.0.8059.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: faaea3bfbba59bcb8d82bac2b0084fe1
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-at pageclasses.CheckoutPage.scrollToBottom(CheckoutPage.java:43)
-at saucedemotests.LoginTest.loginSuccesTest(LoginTest.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccesTest -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:saucedemotests.LoginTest@4562e04d]" started-at="2026-10-16T15:38:55 EDT" name="endTest" finished-at="2026-10-16T15:38:55 EDT" duration-ms="412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginSuccesTest status=FAILURE method=LoginTest.loginSuccesTest()[pri:0, instance:saucedemotests.LoginTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- saucedemotests.LoginTest -->
-    </test> <!-- Chrome Test -->
-    <test started-at="2026-10-16T15:38:45 EDT" name="Safari Test" finished-at="2026-10-16T15:38:58 EDT" duration-ms="12959">
-      <class name="saucedemotests.LoginTest">
-        <test-method is-config="true" signature="initialise()[pri:0, instance:saucedemotests.LoginTest@3c46e67a]" started-at="2026-10-16T15:38:44 EDT" name="initialise" finished-at="2026-10-16T15:38:45 EDT" duration-ms="387" status="PASS">
+        <test-method is-config="true" signature="initialise()[pri:0, instance:saucedemotests.LoginTest@2a65fe7c]" started-at="2026-10-17T18:37:43 EDT" name="initialise" finished-at="2026-10-17T18:37:44 EDT" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialise -->
-        <test-method is-config="true" signature="preReq(java.lang.reflect.Method,java.lang.String)[pri:0, instance:saucedemotests.LoginTest@3c46e67a]" started-at="2026-10-16T15:38:45 EDT" name="preReq" finished-at="2026-10-16T15:38:58 EDT" duration-ms="12899" status="FAIL">
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method,java.lang.String)[pri:0, instance:saucedemotests.LoginTest@2a65fe7c]" started-at="2026-10-17T18:37:44 EDT" name="preReq" finished-at="2026-10-17T18:37:52 EDT" duration-ms="7907" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,142 +24,29 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
-Host info: host: 'Manpreets-MacBook-Air.local', ip: '2607:fea8:a5a:bb10:0:0:0:1e12%en0'
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.9', java.version: '21.0.5'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
-Host info: host: 'Manpreets-MacBook-Air.local', ip: '2607:fea8:a5a:bb10:0:0:0:1e12%en0'
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.9', java.version: '21.0.5'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:195)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:288)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:89)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:61)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
-at managers.DriverManager.initDriver(DriverManager.java:29)
-at saucedemotests.BaseTest.preReq(BaseTest.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preReq -->
-        <test-method signature="loginSuccesTest()[pri:0, instance:saucedemotests.LoginTest@3c46e67a]" started-at="2026-10-16T15:38:58 EDT" name="loginSuccesTest" finished-at="2026-10-16T15:38:58 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
-Host info: host: 'Manpreets-MacBook-Air.local', ip: '2607:fea8:a5a:bb10:0:0:0:1e12%en0'
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.9', java.version: '21.0.5'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
-Host info: host: 'Manpreets-MacBook-Air.local', ip: '2607:fea8:a5a:bb10:0:0:0:1e12%en0'
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.7.9', java.version: '21.0.5'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
-Capabilities {browserName: safari}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:195)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:288)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:89)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:61)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
-at managers.DriverManager.initDriver(DriverManager.java:29)
-at saucedemotests.BaseTest.preReq(BaseTest.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="loginSuccesTest()[pri:0, instance:saucedemotests.LoginTest@2a65fe7c]" started-at="2026-10-17T18:37:52 EDT" name="loginSuccesTest" finished-at="2026-10-17T18:38:02 EDT" duration-ms="10453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccesTest -->
-        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:saucedemotests.LoginTest@3c46e67a]" started-at="2026-10-16T15:38:58 EDT" name="endTest" finished-at="2026-10-16T15:38:58 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:saucedemotests.LoginTest@2a65fe7c]" started-at="2026-10-17T18:38:02 EDT" name="endTest" finished-at="2026-10-17T18:38:02 EDT" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSuccesTest status=SUCCESS method=LoginTest.loginSuccesTest()[pri:0, instance:saucedemotests.LoginTest@2a65fe7c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:saucedemotests.LoginTest@3c46e67a]" started-at="2026-10-16T15:38:58 EDT" name="tearDown" finished-at="2026-10-16T15:38:58 EDT" duration-ms="388" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:saucedemotests.LoginTest@2a65fe7c]" started-at="2026-10-17T18:38:02 EDT" name="tearDown" finished-at="2026-10-17T18:38:04 EDT" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- saucedemotests.LoginTest -->
-    </test> <!-- Safari Test -->
-  </suite> <!-- Cross Browser Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

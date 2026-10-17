@@ -34,7 +34,7 @@ public class BaseTest {
 	
 	@BeforeMethod
 	@Parameters("browser")
-	public void preReq(Method method,@Optional("chrome") String browser) throws IOException {
+	public void preReq(Method method,@Optional("safari") String browser) throws IOException {
 		ExtentTestManager.createTest(method.getName());
 		DriverManager.initDriver(browser);
 		DriverManager.getDriver();

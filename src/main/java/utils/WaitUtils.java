@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
@@ -37,6 +38,10 @@ public class WaitUtils {
 	public static List<WebElement> visibilityOfAllElementsLocatedBy(By locator) {
 		return getWait().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
+	public static Alert alertIsPresent() {
+		return getWait().until(ExpectedConditions.alertIsPresent());
+	}
+
 
 	public static Actions actions() {
 		return new Actions(DriverManager.getDriver());

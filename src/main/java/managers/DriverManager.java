@@ -1,9 +1,12 @@
 package managers;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.Parameters;
@@ -22,7 +25,22 @@ public class DriverManager {
 	//String browser = BaseUtils.getConfigValue("browser");
 		switch (browser) {
 		case "chrome":
-			driver.set(new ChromeDriver());
+			
+			ChromeOptions options = new ChromeOptions();
+
+            Map<String, Object> prefs = new HashMap<>();
+
+            // Disable Chrome password manager
+            prefs.put("credentials_enable_service", false);
+            prefs.put("profile.password_manager_enabled", false);
+
+            // IMPORTANT - disables "Change your password" warning
+            prefs.put("profile.password_manager_leak_detection", false);
+
+            options.setExperimentalOption("prefs", prefs);
+
+            driver.set(new ChromeDriver(options));
+			//driver.set(new ChromeDriver());
 		 ExtentTestManager.getLog().info("Chrome browser has launched");
 			break;
 		case "safari":
